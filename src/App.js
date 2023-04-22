@@ -1,29 +1,37 @@
-import './App.css';
+import React, { useState } from "react";
+import Login from "./components/Login";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { useEffect } from "react";
+import { auth } from "./firebase";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Contents from "./components/Contents/Contents";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="app">
+      {!user ? (
+        <Login setUser={setUser} />
+      ) : (
+        <>
+          <Header user={user} />
+          <div className="body">
+            <Sidebar />
+            <Contents />
+          </div>
+        </>
+      )}
     </div>
   );
-}
+};
 
 export default App;

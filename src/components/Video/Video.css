@@ -1,0 +1,4 @@
+.Videos{
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+}

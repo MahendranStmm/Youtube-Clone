@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.icons > p {
+  height: 25px;
+  padding-left: 20px;
+}
+
+.box {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.795);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icons:hover {
+  background-color: rgb(75, 77, 77);
+  border-radius: 10px;
+}
+
+.icon1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  padding: 10px 10px;
+  background-color: rgb(75, 77, 77);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icon1 > p {
+  height: 25px;
+  padding-left: 20px;
+}
+
+.icon1:hover {
+  background: none;
+}

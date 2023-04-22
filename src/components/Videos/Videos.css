@@ -1,0 +1,42 @@
+.images {
+  height: 200px;
+  width: 360px;
+  border-radius: 8%;
+}
+
+.thumbnail {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  height: 250px;
+  width: 360px;
+}
+
+.details {
+  color: white;
+  display: flex;
+}
+
+.days {
+  color: white;
+  display: flex;
+}
+
+.days > h5 {
+  color: white;
+  padding-left: 5px;
+}
+
+a:hover {
+  box-shadow: black inset 20px 20px 20px;
+}
+
+p {
+  color: white;
+  height: 45px;
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}

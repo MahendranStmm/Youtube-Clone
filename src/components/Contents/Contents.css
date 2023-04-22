@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.button{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+
+
+.button > p{
+   font-family: 'Roboto', sans-serif;
+   color: rgb(243, 237, 237);
+   margin-right: 40px;
+   padding: 5px 20px 0px 20px;
+   height: 25px;
+   text-align: center;
+   border-radius: 10px;
+   background-color: rgb(54, 54, 54);
+   cursor: pointer;
+   font-weight: 600;
+}
+
+
+.button > p:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.all{
+    background-color: wheat;
+    color: black;
+}
+
+#music{
+    background-color: aliceblue;
+    color: black;
+}
